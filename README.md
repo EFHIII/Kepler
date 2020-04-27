@@ -6,6 +6,82 @@ Named After Johannes Kepler because Kepler took Tycho Brahe's observations after
 
 # TODO:
 
+- picture of the day/pod/apod/potd/apotd
+  - >pod
+    - >picture
+    - >picture of the day
+  - >pod <date>
+  - >pod yesterday
+  - >pod random
+    - >random pod
+  - >pod link
+
+- coordinates from arbitrary name
+- image from arbitrary place in sky at small scale
+- image from arbitrary place in sky at medium scale
+- image from arbitrary place in sky at large scale
+
+- position of arbitrary objects in solar system on a given date
+- orbit of arbitrary objects in solar system
+- orbit of arbitrary objects in solar system around a given center/barycenter
+- view of arbitrary objects from arbitrary position on earth on arbitrary date
+- identify dates in which an object eclipses another
+- identify dates in which an object has closest approach with another
+
+- maybe shade objects based on position of the sun
+- maybe 3D textures for the planets, and rotational models for planets where possible
+
+- GIF of object path
+- GIF of transit of object
+- GIF of object approach
+
+- image of current lunar phase/lunar phase on arbitrary date
+
+## commands
+### picture of the day
+- >pod
+- >pod link
+- >pod random
+- >pod yesterday
+- >pod <date>
+
+### look at
+- >look at (<body>)/(<ra> <dec>) (from (<body> (<loc>/(<lat> <long>))\*)/(<lat> <long>)/<loc>)\* (on <date> (<time>)\* (- <time>/(<date> <time>))\* (<timezone>)\*)\*
+- >look at <body>
+- >look at <body> from <body>
+- >look at <body> from <body> <lat> <long>
+- >look at <body> from <location name (like city)>
+- >look at <body> from <lat> <long>
+- >look at <ra> <dec>
+- >look at <ra> <dec> from <body>
+- >look at <ra> <dec> from <body> <lat> <long>
+- >look at <ra> <dec> from <location name (like city)>
+- >look at <ra> <dec> from <lat> <long>
+- >look at <body> on <date>
+- >look at <body> from <body> on <date>
+- >look at <body> from <body> <lat> <long> on <date>
+- >look at <body> from <location name (like city)> on <date>
+- >look at <body> from <lat> <long> on <date>
+- >look at <ra> <dec> on <date>
+- >look at <ra> <dec> from <body> on <date>
+- >look at <ra> <dec> from <body> <lat> <long> on <date>
+- >look at <ra> <dec> from <location name (like city)> on <date>
+- >look at <ra> <dec> from <lat> <long> on <date>
+
+where <date> can be a single date, date-time, date-time - time range, date - date range, or date-time - date-time range.
+
+### orbit
+- >orbit <body> (around <body>)\* ( top/side/angle/(<deg> <deg>\*) )\*
+
+### transit/eclipse
+- >transit
+  - assumes moon and sun from earth
+- >transit <body> and* <body>
+  - assumes from earth
+- >transit <body> and* <body> from* <body>
+
+# Useful links:
+
 ## picture of the day:
 
 -   <https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY&count=1>
@@ -77,7 +153,7 @@ Named After Johannes Kepler because Kepler took Tycho Brahe's observations after
 ### JPL Horizons:
 
 -   <https://ssd.jpl.nasa.gov/?horizons_doc>
-    file:///C:/Users/efhii/Downloads/Horizons_doc.pdf
+-   <file:///C:/Users/efhii/Downloads/Horizons_doc.pdf>
 
 ### JPL mission design:
 
